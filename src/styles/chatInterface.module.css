@@ -1,0 +1,24 @@
+.chatInterface {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: end;
+  margin-top: 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: white;
+  z-index: 1000;
+  padding-bottom: 50px;
+}
+
+.chatInterface > textarea {
+  border-radius: 15px;
+  padding: 10px;
+  width: 50%;
+}
+
+.userInput {
+  resize: none;
+}
