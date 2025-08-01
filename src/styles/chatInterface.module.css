@@ -13,12 +13,39 @@
   padding-bottom: 50px;
 }
 
-.chatInterface > textarea {
+.chatInterface textarea {
   border-radius: 15px;
   padding: 10px;
-  width: 50%;
+  width: 40%;
+  box-shadow: 3px 3px 5px lightgrey;
+  height: 10vh;
 }
 
 .userInput {
   resize: none;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+  color: black;
+  background-color: rgb(222, 221, 221);
+  border-radius: 50%;
+}
+
+.inputWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+.sendButton {
+  position: absolute;
+  right: 31.5%;
+  bottom: 20%;
+}
+
+.sendButton:hover {
+  cursor: pointer;
 }
