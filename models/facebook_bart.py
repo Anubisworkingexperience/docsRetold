@@ -25,6 +25,7 @@ class SummaryRequest(BaseModel):
 
 @app.post("/summarize")
 async def summarize(req: SummaryRequest):
+    print(req)
     # if len(req.article) < 30:
     #     return {"summary": 'Article is too short to summarize'}
     summary = summarizer(

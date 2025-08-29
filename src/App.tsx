@@ -9,7 +9,7 @@ function App() {
     <>
       <div className={styles.app}>
         <h1>DocsRetold</h1>
-        <p>Send a text to summarize</p>
+        <p className={styles.greeting}>Hello! I can help you summarize your text!</p>
         <AnswerSection />
         <ChatInterface />
       </div>
