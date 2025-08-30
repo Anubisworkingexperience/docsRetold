@@ -12,5 +12,3 @@ Goal of summarizing is to save user's time and still give him the key informatio
 
 Ideally this would work for different shapes/forms of user input information such as text,
 documents, images, videos, etc.
-
-
