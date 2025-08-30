@@ -23,8 +23,15 @@ cd docsRetold
 npm run dev
 ```
 
-3. Run FastAPI server
+3. Install dependencies in venv
 ```bash
 cd models
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+4. Run FastAPI server
+```bash
 uvicorn facebook_bart:app --reload --host 0.0.0.0 --port 8000
 ```

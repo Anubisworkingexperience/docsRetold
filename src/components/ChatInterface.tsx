@@ -46,7 +46,12 @@ export function ChatInterface() {
     <div className={styles.chatInterface}>
       <div className={styles.inputWrapper}>
         <textarea name="chat" id="chat" className={styles.userInput}
-         onChange={(e) => setCurrentInput(e.target.value)}></textarea>
+         onChange={(e) => setCurrentInput(e.target.value)} onKeyDown={(e) => {
+          if (e.key == 'Enter' && !e.repeat && !e.shiftKey) {
+            e.preventDefault();
+            sendSummarizeRequest();
+          }
+         }}></textarea>
         <img src={arrowUp} alt="send button" className={styles.sendButton}
          onClick={sendSummarizeRequest}/>
       </div>
